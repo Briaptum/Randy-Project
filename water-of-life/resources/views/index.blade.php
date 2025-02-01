@@ -6,7 +6,6 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Water of Life</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     <x-header />
@@ -16,7 +15,7 @@
             <h1 class="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-140 text-black">Welcome to Water Of Life!</h1>
             <p class="text-center text-lg sm:text-xl md:text-2xl mt-4 text-black">We are a non-profit organization dedicated to providing help to children who are in need. If you want get to know or contact us, you can use the following social media platforms.</p>
             <div class="social-icons flex gap-4 sm:gap-6 mt-8">
-                <a href="https://www.facebook.com/wateroflife" class="text-black hover:text-blue-600 transition-colors duration-300">
+                <a href="https://www.facebook.com/WaterofLife"  target="_blank" class="text-black hover:text-blue-600 transition-colors duration-300">
                     <i class="fab fa-facebook text-2xl sm:text-3xl md:text-4xl"></i>
                 </a>
                 <a href="https://www.instagram.com/wateroflife" class="text-black hover:text-pink-600 transition-colors duration-300">

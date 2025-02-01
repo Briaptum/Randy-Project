@@ -1,3 +1,3 @@
-    <div class="border-t border-gray-200 pt-8 text-center pb-8">
-        <p class="text-gray-600">© {{ date('Y') }} Water of Life. All rights reserved.</p>
+    <div class="bg-custom-cyan border-t border-gray-200 pt-6 text-center pb-6">
+        <p class="text-white">© {{ date('Y') }} Water of Life. All rights reserved.</p>
     </div>
