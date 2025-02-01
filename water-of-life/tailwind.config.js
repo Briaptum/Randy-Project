@@ -12,6 +12,13 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                'custom-cyan': '#36C9C9',
+            },
+            screens: {
+                'nav': '1115px',
+                'menu': '1000px'
+            },
         },
     },
     plugins: [],

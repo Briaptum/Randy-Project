@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @source "../views";
+
+[x-cloak] {
+    display: none !important;
+}
