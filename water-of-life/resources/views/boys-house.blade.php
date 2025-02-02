@@ -10,15 +10,16 @@
 
     <x-header />
 
-    <main class="min-h-50 flex flex-col bg-fixed bg-cover bg-center p-4 bg-white mb-10">
-        <div class="text-center h-screen max-w-[60rem] mx-auto px-4">
+    <main class="min-h-50 flex flex-col bg-fixed bg-cover bg-center p-4 bg-gray-100">
+        <div class="bg-gray-50 text-center h-screen max-w-[60rem] mx-auto px-4">
+
             <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-140 text-black">Water Of Life Boys House!</h1>
             <p class="text-center text-lg sm:text-xl md:text-2xl mt-4 text-black">We have <span class="font-bold text-custom-cyan">BLESSED</span> to have about
             25+ young men <span class="font-bold text-custom-cyan">currently</span> living with at the water of life center.
             Ages of these awesome young men range from 14 - 25.</p>
             <p class="text-center text-lg sm:text-xl md:text-2xl mt-4 text-black">These boys wanted 
-            Education, training, skills, God
-            some are orphans, but
+            Education, training, skills, God.
+            Some are orphans, but
             most are just kids who needed a hand
             in a poor disadvantaged country
             to get an edcuation.

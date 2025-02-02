@@ -10,8 +10,8 @@
 
     <x-header />
 
-    <main class="min-h-50 flex flex-col bg-fixed bg-cover bg-center p-4 bg-white mb-10">
-        <div class="text-center h-screen max-w-[60rem] mx-auto px-4">
+    <main class="min-h-50 flex flex-col bg-fixed bg-cover bg-center p-4 bg-gray-100">
+        <div class="bg-gray-50 text-center h-screen max-w-[60rem] mx-auto px-4">
             <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-140 text-black">Water Of Life Girls House!</h1>
             <p class="text-center text-lg sm:text-xl md:text-2xl mt-4 text-black"> Part of the ministry at Water of Life is a girls home, where Gals who wish to receive an <span class="font-bold text-custom-cyan">education</span> are housed in a <span class="font-bold text-custom-cyan">family environment</span>. girls are usually the last to receive an education so this is a great help to them. They are also discipled and given work opportunities.</p>
             <p class="text-center text-lg sm:text-xl md:text-2xl mt-4 text-black">Twomen are given opportunities to change their lives. A type of u-turn for christ program. Each of these women has her own story, but usually all come from very vulnerable situations.</p>

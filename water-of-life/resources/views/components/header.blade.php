@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 <div x-data="{ isOpen: false }">
@@ -43,8 +45,9 @@
                         <div class="py-2" role="menu">
                             <a href="/girls-house" class="block px-4 nav:px-6 py-2 nav:py-3 text-sm nav:text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Girls House</a>
                             <a href="/boys-house" class="block px-4 nav:px-6 py-2 nav:py-3 text-sm nav:text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Boys House</a>
-                            <a href="/family/adults" class="block px-4 nav:px-6 py-2 nav:py-3 text-sm nav:text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Children Of Hope</a>
-                            <a href="/family/elderly" class="block px-4 nav:px-6 py-2 nav:py-3 text-sm nav:text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Calvary chapel Phnom Penh</a>
+                            <a href="/coh" class="block px-4 nav:px-6 py-2 nav:py-3 text-sm nav:text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Children Of Hope</a>
+                            <a href="/ccpp" class="block px-4 nav:px-6 py-2 nav:py-3 text-sm nav:text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Calvary chapel Phnom Penh</a>
+
                         </div>
                     </div>
                 </div>
@@ -113,8 +116,9 @@
                         <div x-show="dropdownOpen" class="pl-6 w-full">
                             <a href="/girls-house" class="block px-6 py-3 text-base font-medium text-gray-600 hover:text-[#36C9C9] uppercase">Girls House</a>
                             <a href="/boys-house" class="block px-6 py-3 text-base font-medium text-gray-600 hover:text-[#36C9C9] uppercase">Boys House</a>
-                            <a href="/family/adults" class="block px-6 py-3 text-base font-medium text-gray-600 hover:text-[#36C9C9] uppercase">Children Of Hope</a>
-                            <a href="/family/elderly" class="block px-6 py-3 text-base font-medium text-gray-600 hover:text-[#36C9C9] uppercase">Calvary chapel Phnom Penh</a>
+                            <a href="/coh" class="block px-6 py-3 text-base font-medium text-gray-600 hover:text-[#36C9C9] uppercase">Children Of Hope</a>
+                            <a href="/ccpp" class="block px-6 py-3 text-base font-medium text-gray-600 hover:text-[#36C9C9] uppercase">Calvary chapel Phnom Penh</a>
+
                         </div>
                     </div>
 
