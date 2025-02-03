@@ -104,12 +104,13 @@
                 x-transition:leave-end="opacity-0 transform scale-95"
             >
                 <div class="pt-4 pb-4 space-y-3">
-                    <a href="/about" class="block px-6 py-4 text-lg font-medium text-gray-600 hover:text-[#36C9C9] uppercase">About Cambodia</a>
+                    <a href="/about" class="block px-6 py-4 text-lg font-medium {{ request()->is('about*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] uppercase">About Cambodia</a>
                     
                     <div x-data="{ dropdownOpen: false }" class="relative">
-                        <button @click="dropdownOpen = !dropdownOpen" class="w-full flex justify-between items-center px-6 py-4 text-lg font-medium text-gray-600 hover:text-[#36C9C9] uppercase">
-                            WOL Family
+                        <button @click="dropdownOpen = !dropdownOpen" class="w-full flex justify-between items-center px-6 py-4 text-lg font-medium {{ request()->is('wol-family*') || request()->is('girls-house*') || request()->is('boys-house*') || request()->is('coh*') || request()->is('ccpp*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] uppercase">
+                            <a href="/wol-family">WOL Family</a>
                             <svg class="h-6 w-6" :class="{ 'transform rotate-180': dropdownOpen }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+
                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                             </svg>
                         </button>

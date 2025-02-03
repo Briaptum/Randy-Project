@@ -84,6 +84,24 @@
         </div>
     </main>
 
+
+    <section class="bg-gray-200 flex flex-col items-center justify-center mx-auto px-4 pt-10">
+        <h1 class="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-900">Map of Calvary Chapel Phnom Penh</h1>
+
+        <div class="relative w-full max-w-4xl mt-8 max-w-[60rem] min-h-[35rem]">
+            <div class="w-full h-[400px] rounded-lg overflow-hidden">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.4025775251357!2d104.91021197627195!3d11.52295224497798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310950eae0c4f2a7%3A0xfd3ed65f3406558f!2sCalvary%20Chapel%20Phnom%20Penh!5e0!3m2!1sen!2sus!4v1738563589299!5m2!1sen!2sus" 
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
     <x-footer />
 
 </body>

@@ -7,6 +7,7 @@ use App\Http\Controllers\GirlsHouseController;
 use App\Http\Controllers\WolFamilyController;
 use App\Http\Controllers\COHController;
 use App\Http\Controllers\CcppController;
+use App\Http\Controllers\AboutController;
 Route::get('/', function () {
     return redirect('/index');
 });
@@ -17,3 +18,4 @@ Route::get('/girls-house', [GirlsHouseController::class, 'index'])->name('girls-
 Route::get('/wol-family', [WolFamilyController::class, 'index'])->name('wol-family.index');
 Route::get('/coh', [COHController::class, 'index'])->name('coh.index');
 Route::get('/ccpp', [CcppController::class, 'index'])->name('ccpp.index');
+Route::get('/about', [AboutController::class, 'index'])->name('about.index');
