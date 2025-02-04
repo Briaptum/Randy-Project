@@ -8,6 +8,14 @@ use App\Http\Controllers\WolFamilyController;
 use App\Http\Controllers\COHController;
 use App\Http\Controllers\CcppController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\WhoWeAreController;
+use App\Http\Controllers\MinistriesController;
+use App\Http\Controllers\HelpController;
+use App\Http\Controllers\WWAController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HTHController;
+use App\Http\Controllers\DashboardController;
+
 Route::get('/', function () {
     return redirect('/index');
 });
@@ -19,3 +27,13 @@ Route::get('/wol-family', [WolFamilyController::class, 'index'])->name('wol-fami
 Route::get('/coh', [COHController::class, 'index'])->name('coh.index');
 Route::get('/ccpp', [CcppController::class, 'index'])->name('ccpp.index');
 Route::get('/about', [AboutController::class, 'index'])->name('about.index');
+Route::get('/ministries', [MinistriesController::class, 'index'])->name('ministries.index');
+Route::get('/who-we-are', [WWAController::class, 'index'])->name('who-we-are.index');
+Route::get('/help', [HelpController::class, 'index'])->name('help.index');
+Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+Route::get('/how-to-help', [HTHController::class, 'index'])->name('how-to-help.index');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
+Route::delete('/dashboard/contacts/{contact}', [DashboardController::class, 'destroy'])->name('dashboard.destroy');
+Route::post('/dashboard/help', [DashboardController::class, 'storeHelpItem'])->name('dashboard.help.store');
+Route::delete('/dashboard/help/{helpItem}', [DashboardController::class, 'destroyHelpItem'])->name('dashboard.help.destroy');

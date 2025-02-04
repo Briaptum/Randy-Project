@@ -35,7 +35,7 @@
             <!-- Navigation Section -->
             <nav class="hidden menu:flex space-x-8 nav:space-x-12 justify-center py-4">
                 <div class="relative group">
-                    <button class="text-base nav:text-lg font-medium text-gray-600 hover:text-[#36C9C9] inline-flex items-center uppercase">
+                    <button class="text-base nav:text-lg font-medium {{ request()->routeIs('wol-family*') || request()->routeIs('girls-house*') || request()->routeIs('boys-house*') || request()->routeIs('coh*') || request()->routeIs('ccpp*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] inline-flex items-center uppercase">
                         <a href="/wol-family">WOL Family</a>
                         <svg class="ml-2 h-4 nav:h-5 w-4 nav:w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -51,31 +51,18 @@
                         </div>
                     </div>
                 </div>
-                <a href="/about" class="text-base nav:text-lg font-medium text-gray-600 hover:text-[#36C9C9] uppercase">About Cambodia</a>
-                
-                <div class="relative group">
-                    <button class="text-base nav:text-lg font-medium text-gray-600 hover:text-[#36C9C9] inline-flex items-center uppercase">
-                        Ministries
-                        <svg class="ml-2 h-4 nav:h-5 w-4 nav:w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <div class="absolute left-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out hover:opacity-100 hover:visible">
-                        <div class="py-2" role="menu">
-                            <a href="/ministries/education" class="block px-6 py-3 text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Arey Kasat</a>
-                            <a href="/ministries/evangelism" class="block px-6 py-3 text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Kom pong Thom</a>
+                <a href="/about" class="text-base nav:text-lg font-medium {{ request()->routeIs('about*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] uppercase">About Cambodia</a>
 
-                        </div>
-                    </div>
-                </div>
-                
-                <a href="/who-we-are" class="text-base nav:text-lg font-medium text-gray-600 hover:text-[#36C9C9] uppercase">Who We Are</a>
-                <a href="/contact" class="text-base nav:text-lg font-medium text-gray-600 hover:text-[#36C9C9] uppercase">Contact Us</a>
+                <a href="/ministries" class="text-base nav:text-lg font-medium {{ request()->routeIs('ministries*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] uppercase">Ministries</a>
+                <a href="/who-we-are" class="text-base nav:text-lg font-medium {{ request()->routeIs('who-we-are*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] uppercase">Who We Are</a>
+
+                <a href="/contact" class="text-base nav:text-lg font-medium {{ request()->routeIs('contact*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] uppercase">Contact Us</a>
                 
                 <div class="relative group">
-                    <button class="text-base nav:text-lg font-medium text-gray-600 hover:text-[#36C9C9] inline-flex items-center uppercase">
-                        How to help
+                    <button class="text-base nav:text-lg font-medium {{ request()->routeIs('help*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] inline-flex items-center uppercase">
+                       <a href="/how-to-help">How to help</a>
                         <svg class="ml-2 h-4 nav:h-5 w-4 nav:w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+
                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                         </svg>
                     </button>
@@ -122,27 +109,16 @@
 
                         </div>
                     </div>
-
-                    <div x-data="{ dropdownOpen: false }" class="relative">
-                        <button @click="dropdownOpen = !dropdownOpen" class="w-full flex justify-between items-center px-6 py-4 text-lg font-medium text-gray-600 hover:text-[#36C9C9] uppercase">
-                            Ministries
-                            <svg class="h-6 w-6" :class="{ 'transform rotate-180': dropdownOpen }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                            </svg>
-                        </button>
-                        <div x-show="dropdownOpen" class="pl-6 w-full">
-                            <a href="/ministries/education" class="block px-6 py-3 text-base font-medium text-gray-600 hover:text-[#36C9C9] uppercase">Arey Kasat</a>
-                            <a href="/ministries/evangelism" class="block px-6 py-3 text-base font-medium text-gray-600 hover:text-[#36C9C9] uppercase">Kom pong Thom</a>
-                        </div>
-                    </div>
-
+                    <a href="/ministries" class="block px-6 py-4 text-lg font-medium text-gray-600 hover:text-[#36C9C9] uppercase">Ministries</a>
                     <a href="/who-we-are" class="block px-6 py-4 text-lg font-medium text-gray-600 hover:text-[#36C9C9] uppercase">Who We Are</a>
+
                     <a href="/contact" class="block px-6 py-4 text-lg font-medium text-gray-600 hover:text-[#36C9C9] uppercase">Contact Us</a>
 
                     <div x-data="{ dropdownOpen: false }" class="relative">
                         <button @click="dropdownOpen = !dropdownOpen" class="w-full flex justify-between items-center px-6 py-4 text-lg font-medium text-gray-600 hover:text-[#36C9C9] uppercase">
-                            How to help
+                            <a href="/how-to-help">How to help</a>
                             <svg class="h-6 w-6" :class="{ 'transform rotate-180': dropdownOpen }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+
                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                             </svg>
                         </button>
