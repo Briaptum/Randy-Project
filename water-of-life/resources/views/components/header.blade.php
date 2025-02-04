@@ -69,10 +69,6 @@
                     <div class="absolute left-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out hover:opacity-100 hover:visible">
                         <div class="py-2" role="menu">
                             <a href="/help/donate" class="block px-6 py-3 text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Donate</a>
-                            <a href="/help/volunteer" class="block px-6 py-3 text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Prayer Request</a>
-                            <a href="/help/partner" class="block px-6 py-3 text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Need List</a>
-
-
                         </div>
                     </div>
                 </div>
@@ -124,8 +120,7 @@
                         </button>
                         <div x-show="dropdownOpen" class="pl-6 w-full">
                             <a href="/help/donate" class="block px-6 py-3 text-base font-medium text-gray-600 hover:text-[#36C9C9] uppercase">Donate</a>
-                            <a href="/help/volunteer" class="block px-6 py-3 text-base font-medium text-gray-600 hover:text-[#36C9C9] uppercase">Prayer Request</a>
-                            <a href="/help/partner" class="block px-6 py-3 text-base font-medium text-gray-600 hover:text-[#36C9C9] uppercase">Need List</a>
+                           
                         </div>
                     </div>
                 </div>

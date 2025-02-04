@@ -65,7 +65,7 @@
                 </button>
 
                 <button class="sm:text-lg font-bold bg-custom-cyan text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md mt-4 hover:bg-white hover:text-custom-cyan hover:border hover:border-custom-cyan">
-                    <a href="/donate">
+                    <a href="/help/donate">
                         Donate to COH
                     </a>
                 </button>

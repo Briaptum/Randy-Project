@@ -10,11 +10,11 @@
 
     <x-header />
 
-    <main class="min-h-50 flex flex-col bg-fixed bg-cover bg-center p-4 bg-gray-100">
-        <div class="text-center h-50 max-w-[65rem] mx-auto px-4">
+    <main class="p-10 flex flex-col bg-fixed bg-cover bg-center min-h-screen" style="background-image: url('/images/gradient-sky-bg.jpg');">
+        <div class="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white rounded-lg shadow-xl">
             <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-140 text-black">Water Of Life Family!</h1>
-            <p class="text-center text-lg sm:text-xl md:text-2xl mt-4 text-black">Things that touched our hearts, serving as a family with humble hearts.</p>
-            <p class="text-center text-lg sm:text-xl md:text-2xl mt-4 text-black">Water Of life is separated into 4 ministries, each with their own unique purpose and mission.</p>
+            <p class="text-lg sm:text-xl md:text-2xl mt-4 text-black">Things that touched our hearts, serving as a family with humble hearts.</p>
+            <p class="text-lg sm:text-xl md:text-2xl mt-4 text-black">Water Of life is separated into 4 ministries, each with their own unique purpose and mission.</p>
             <button class="text-base sm:text-lg font-bold bg-custom-cyan text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md mt-4 hover:bg-white hover:text-custom-cyan hover:border hover:border-custom-cyan">
                 <a href="/boys-house">
                     Boys House

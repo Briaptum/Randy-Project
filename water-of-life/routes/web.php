@@ -15,7 +15,7 @@ use App\Http\Controllers\WWAController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HTHController;
 use App\Http\Controllers\DashboardController;
-
+use App\Http\Controllers\DonateController;
 Route::get('/', function () {
     return redirect('/index');
 });
@@ -37,3 +37,4 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard
 Route::delete('/dashboard/contacts/{contact}', [DashboardController::class, 'destroy'])->name('dashboard.destroy');
 Route::post('/dashboard/help', [DashboardController::class, 'storeHelpItem'])->name('dashboard.help.store');
 Route::delete('/dashboard/help/{helpItem}', [DashboardController::class, 'destroyHelpItem'])->name('dashboard.help.destroy');
+Route::get('/help/donate', [DonateController::class, 'index'])->name('donate.index');

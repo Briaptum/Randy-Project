@@ -56,7 +56,7 @@
                         <a href="/contact">Contact Us To Learn More!</a>
                     </button>
                     <button class="text-base sm:text-lg font-bold bg-custom-cyan text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md hover:bg-white hover:text-custom-cyan hover:border hover:border-custom-cyan">
-                        <a href="/contact">Donate to the boys house!</a>
+                        <a href="/help/donate">Donate to the boys house!</a>
                     </button>
                 </div>
             </div>

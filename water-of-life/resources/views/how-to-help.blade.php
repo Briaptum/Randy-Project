@@ -33,7 +33,7 @@
                 <a href="/contact">Contact Us To Know More</a>
             </button>
             <button class="bg-custom-cyan text-white px-4 py-2 rounded-md hover:bg-white hover:text-custom-cyan hover:border hover:border-custom-cyan mt-4">
-                <a href="/help/donate">Donate</a>
+                <a href="/help/donate">Donate To Help</a>
             </button>
         </div>
     </main>
