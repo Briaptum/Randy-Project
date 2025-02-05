@@ -32,47 +32,48 @@
     <!-- Sticky Navigation -->
     <div class="sticky top-0 bg-white shadow-lg z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Navigation Section -->
-            <nav class="hidden menu:flex space-x-8 nav:space-x-12 justify-center py-4">
-                <div class="relative group">
-                    <button class="text-base nav:text-lg font-medium {{ request()->routeIs('wol-family*') || request()->routeIs('girls-house*') || request()->routeIs('boys-house*') || request()->routeIs('coh*') || request()->routeIs('ccpp*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] inline-flex items-center uppercase">
-                        <a href="/wol-family">WOL Family</a>
-                        <svg class="ml-2 h-4 nav:h-5 w-4 nav:w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <div class="absolute left-0 mt-2 w-56 nav:w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out hover:opacity-100 hover:visible">
-                        <div class="py-2" role="menu">
-                            <a href="/girls-house" class="block px-4 nav:px-6 py-2 nav:py-3 text-sm nav:text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Girls House</a>
-                            <a href="/boys-house" class="block px-4 nav:px-6 py-2 nav:py-3 text-sm nav:text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Boys House</a>
-                            <a href="/coh" class="block px-4 nav:px-6 py-2 nav:py-3 text-sm nav:text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Children Of Hope</a>
-                            <a href="/ccpp" class="block px-4 nav:px-6 py-2 nav:py-3 text-sm nav:text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Calvary chapel Phnom Penh</a>
+            <div class="flex justify-between items-center">
+                <!-- Navigation Section -->
+                <nav class="hidden menu:flex space-x-8 nav:space-x-12 justify-center py-4">
+                    <div class="relative group">
+                        <button class="text-base nav:text-lg font-medium {{ request()->routeIs('wol-family*') || request()->routeIs('girls-house*') || request()->routeIs('boys-house*') || request()->routeIs('coh*') || request()->routeIs('ccpp*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] inline-flex items-center uppercase">
+                            <a href="/wol-family">WOL Family</a>
+                            <svg class="ml-2 h-4 nav:h-5 w-4 nav:w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-56 nav:w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out hover:opacity-100 hover:visible">
+                            <div class="py-2" role="menu">
+                                <a href="/girls-house" class="block px-4 nav:px-6 py-2 nav:py-3 text-sm nav:text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Girls House</a>
+                                <a href="/boys-house" class="block px-4 nav:px-6 py-2 nav:py-3 text-sm nav:text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Boys House</a>
+                                <a href="/coh" class="block px-4 nav:px-6 py-2 nav:py-3 text-sm nav:text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Children Of Hope</a>
+                                <a href="/ccpp" class="block px-4 nav:px-6 py-2 nav:py-3 text-sm nav:text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Calvary chapel Phnom Penh</a>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <a href="/about" class="text-base nav:text-lg font-medium {{ request()->routeIs('about*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] uppercase">About Cambodia</a>
+                    <a href="/about" class="text-base nav:text-lg font-medium {{ request()->routeIs('about*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] uppercase">About Cambodia</a>
 
-                <a href="/ministries" class="text-base nav:text-lg font-medium {{ request()->routeIs('ministries*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] uppercase">Ministries</a>
-                <a href="/who-we-are" class="text-base nav:text-lg font-medium {{ request()->routeIs('who-we-are*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] uppercase">Who We Are</a>
+                    <a href="/ministries" class="text-base nav:text-lg font-medium {{ request()->routeIs('ministries*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] uppercase">Ministries</a>
+                    <a href="/who-we-are" class="text-base nav:text-lg font-medium {{ request()->routeIs('who-we-are*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] uppercase">Who We Are</a>
 
-                <a href="/contact" class="text-base nav:text-lg font-medium {{ request()->routeIs('contact*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] uppercase">Contact Us</a>
-                
-                <div class="relative group">
-                    <button class="text-base nav:text-lg font-medium {{ request()->routeIs('help*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] inline-flex items-center uppercase">
-                       <a href="/how-to-help">How to help</a>
-                        <svg class="ml-2 h-4 nav:h-5 w-4 nav:w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <a href="/contact" class="text-base nav:text-lg font-medium {{ request()->routeIs('contact*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] uppercase">Contact Us</a>
+                    
+                    <div class="relative group">
+                        <button class="text-base nav:text-lg font-medium {{ request()->routeIs('help*') ? 'text-[#36C9C9]' : 'text-gray-600' }} hover:text-[#36C9C9] inline-flex items-center uppercase">
+                           <a href="/how-to-help">How to help</a>
+                            <svg class="ml-2 h-4 nav:h-5 w-4 nav:w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
 
-                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <div class="absolute left-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out hover:opacity-100 hover:visible">
-                        <div class="py-2" role="menu">
-                            <a href="/help/donate" class="block px-6 py-3 text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Donate</a>
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out hover:opacity-100 hover:visible">
+                            <div class="py-2" role="menu">
+                                <a href="/help/donate" class="block px-6 py-3 text-base font-medium text-gray-700 hover:text-[#36C9C9] uppercase" role="menuitem">Donate</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
 
             <!-- Mobile Navigation -->
             <div 
@@ -127,4 +128,5 @@
             </div>
         </div>
     </div>
+</div>
 </div> 

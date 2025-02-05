@@ -16,6 +16,8 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HTHController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DonateController;
+use App\Http\Controllers\AuthController;
+
 Route::get('/', function () {
     return redirect('/index');
 });
@@ -33,8 +35,20 @@ Route::get('/help', [HelpController::class, 'index'])->name('help.index');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::get('/how-to-help', [HTHController::class, 'index'])->name('how-to-help.index');
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
-Route::delete('/dashboard/contacts/{contact}', [DashboardController::class, 'destroy'])->name('dashboard.destroy');
-Route::post('/dashboard/help', [DashboardController::class, 'storeHelpItem'])->name('dashboard.help.store');
-Route::delete('/dashboard/help/{helpItem}', [DashboardController::class, 'destroyHelpItem'])->name('dashboard.help.destroy');
+
+// Guest routes
+Route::middleware('guest')->group(function () {
+    Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
+    Route::post('/login', [AuthController::class, 'login'])->name('auth.login');
+});
+
+// Protected dashboard routes
+Route::middleware('auth')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
+    Route::delete('/dashboard/contacts/{contact}', [DashboardController::class, 'destroy'])->name('dashboard.destroy');
+    Route::post('/dashboard/help', [DashboardController::class, 'storeHelpItem'])->name('dashboard.help.store');
+    Route::delete('/dashboard/help/{helpItem}', [DashboardController::class, 'destroyHelpItem'])->name('dashboard.help.destroy');
+    Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');
+});
+
 Route::get('/help/donate', [DonateController::class, 'index'])->name('donate.index');

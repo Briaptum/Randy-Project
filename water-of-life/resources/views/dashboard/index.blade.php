@@ -2,9 +2,20 @@
 
 @section('content')
 <div class="container mx-auto px-4 py-8">
+    <!-- Dashboard Header with Logout -->
+    <div class="flex justify-between items-center mb-8">
+        <h1 class="text-2xl font-bold">Dashboard</h1>
+        <form method="POST" action="{{ route('auth.logout') }}" class="inline">
+            @csrf
+            <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                Logout
+            </button>
+        </form>
+    </div>
+
     <!-- Contact Messages Section -->
     <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
-        <h1 class="text-2xl font-bold mb-6">Contact Messages</h1>
+        <h2 class="text-2xl font-bold mb-6">Contact Messages</h2>
 
         @if(session('success'))
             <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
