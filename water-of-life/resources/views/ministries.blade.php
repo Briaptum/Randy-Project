@@ -30,10 +30,11 @@
                         <p class="text-gray-600 mb-6 text-lg">
                             Located in the heart of Cambodia, Arey Kasat ministry focuses on providing education and support to local communities. Through various programs, we help develop sustainable solutions for families in need.
                         </p>
-                        <a href="/ministries/education" class="block text-custom-cyan hover:text-blue-700 text-lg mb-2">Contact to know more →</a>
+                        <a href="/contact" class="block text-custom-cyan hover:text-blue-700 text-lg mb-2">Contact to know more →</a>
                         <a href="/help/donate" class="block text-custom-cyan hover:text-blue-700 text-lg">Donate to Arey Kasat →</a>
                     </div>
                 </div>
+
 
 
 
@@ -46,10 +47,11 @@
                         <p class="text-gray-600 mb-6 text-lg">
                             Our Kompong Thom ministry reaches out to rural communities, providing essential services and spiritual guidance. We work closely with local leaders to address community needs.
                         </p>
-                        <a href="/ministries/evangelism" class="block text-custom-cyan hover:text-blue-700 text-lg mb-2">Contact to know more →</a>
+                        <a href="/contact" class="block text-custom-cyan hover:text-blue-700 text-lg mb-2">Contact to know more →</a>
                         <a href="/help/donate" class="block text-custom-cyan hover:text-blue-700 text-lg">Donate to Kompong Thom →</a>
                     </div>
                 </div>
+
 
 
                 <!-- Box 3 -->
@@ -60,7 +62,8 @@
                         <p class="text-gray-600 mb-6 text-lg">
                             Through our community outreach programs, we engage with local populations to provide support, education, and resources that help build stronger, more resilient communities.
                         </p>
-                        <a href="/ministries/community" class="block text-custom-cyan hover:text-blue-700 text-lg mb-2">Contact to know more →</a>
+                        <a href="/contact" class="block text-custom-cyan hover:text-blue-700 text-lg mb-2">Contact to know more →</a>
+
                         <a href="/help/donate" class="block text-custom-cyan hover:text-blue-700 text-lg">Donate to Grace Church →</a>
                     </div>
                 </div>

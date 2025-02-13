@@ -32,7 +32,7 @@
     <!-- Sticky Navigation -->
     <div class="sticky top-0 bg-white shadow-lg z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center">
+            <div class="flex justify-center items-center">
                 <!-- Navigation Section -->
                 <nav class="hidden menu:flex space-x-8 nav:space-x-12 justify-center py-4">
                     <div class="relative group">

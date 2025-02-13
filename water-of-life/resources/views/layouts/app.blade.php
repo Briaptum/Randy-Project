@@ -13,11 +13,11 @@
 <body class="font-sans antialiased">
     <div class="min-h-screen bg-gray-100">
         <x-header />
-        
-        <!-- Page Content -->
+        <!-- Page Cont  ent -->
         <main>
             @yield('content')
         </main>
+        <x-footer />
     </div>
 </body>
 </html> 

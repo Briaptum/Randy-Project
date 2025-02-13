@@ -42,7 +42,7 @@
                         alt="Traditional Cambodian Temple"
                         class="w-full h-[400px] object-cover">
                     <p class="text-custom-cyan text-center italic text-2xl p-2">
-                        <a href="https://en.wikipedia.org/wiki/Angkor_Wat" target="_blank">Angkor Wat</a>
+                        <a href="https://en.wikipedia.org/wiki/Cambodia" target="_blank">Angkor Wat</a>
                     </p>
                 </div>
             </div>
